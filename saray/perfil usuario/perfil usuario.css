@@ -1,0 +1,244 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(#007f8c, black); /* Fondo con el gradiente especificado */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header {
+    font-family: 'Roboto Slab', serif; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    color: #fff;
+    padding: 15px 20px;
+    transition: all 0.3s ease;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    right: 0;
+    z-index: 1000; 
+}
+
+
+.header .logo a {
+    font-family: 'Roboto Slab', serif; 
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.header .logo a:hover {
+    transform: scale(1.1); 
+}
+
+
+.navbar {
+    font-family: 'Roboto Slab', serif; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+
+.navbar a:hover {
+    color: #0a9396;
+    transform: scale(1.05); 
+}
+
+
+.navbar a::after {
+    content: none; 
+}
+
+
+.navbar a.login {
+    background-color: #0a9396;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.navbar a.login:hover {
+    background-color: #005f73;
+    transform: scale(1.1); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a.login:focus {
+    outline: none;
+}
+
+body {
+    padding-top: 85px; 
+}
+
+/* Perfil */
+.perfil-card {
+  background: white;
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.perfil-card:hover {
+  transform: translateY(-10px); 
+  /* Hover efecto sutil */
+}
+
+.perfil-img img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.perfil-info h2 {
+  font-size: 1.6em;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.perfil-info p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 1em;
+}
+
+.perfil-info .location, .perfil-info .email {
+  font-size: 1.1em;
+  color: #007f8c;
+}
+
+.perfil-info .location i, .perfil-info .email i {
+  margin-right: 10px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat strong {
+  font-size: 1.6em;
+  display: block;
+  color: #2c3e50;
+}
+
+.stat span {
+  font-size: 0.9em;
+  color: #777;
+}
+
+/* Footer */
+.section {
+  background-color: #000000;
+  color: white;
+  padding: 10px 0; /* Reducido el padding para hacer la línea negra más pequeña */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-info {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.contact-info h3 {
+  font-size: 1.4em;
+  margin-bottom: 8px;
+}
+
+.contact-info p {
+  margin-bottom: 15px;
+  color: #aaa;
+}
+
+.footer-btns button {
+  margin: 5px;
+  padding: 8px 16px;
+  font-weight: bold;
+  background-color: #007f8c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.footer-btns button:hover {
+  background-color: #005f5a;
+}
+
+/* Footer bottom (Texto de derechos reservados) */
+.footer-bottom {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px 20px;
+  background-color: #000;
+}
+
+.footer-bottom p {
+  font-size: 0.9em;
+  color: white;
+  margin: 0;
+}
+
+
+
+
+

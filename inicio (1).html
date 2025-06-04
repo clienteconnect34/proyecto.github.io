@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inicio de Sesión</title>
+  <link rel="stylesheet" href="inicio.css" />
+  <link rel="icon" href="./Logo_Limpieza___1_-removebg-preview.png" sizes="32x32" type="image/png">
+
+</head>
+<body>
+
+  <!-- Barra superior -->
+  <nav class="navbar">
+    <a href="./samuel/PAGINA PRINCIPAL-20250515T200046Z-1-001/PAGINA PRINCIPAL/pagina principal.html">Inicio</a>
+    <a href="../inicio secion/nicolas/ULTIMA EE/quienes somos.html">Nosotros</a>
+    <a href="#">Contacto</a>
+  </nav>
+
+  <!-- Login -->
+  <div class="login-container">
+    <img src="logo.jpg" alt="Login Image" class="login-image">
+    <form id="login-form" action="http://localhost:3000/login" method="post">
+      <h2>Iniciar Sesión</h2>
+      <input type="text" id="username" name="username" placeholder="Correo" required>
+      <input type="password" id="password" name="password" placeholder="Contraseña" required>
+      <button type="submit">Entrar</button>
+      <p id="error-message"></p>
+      <!-- Enlace para registrarse -->
+      <p class="register-link">
+        ¿No tienes cuenta? <a href="registro.html">Registrarse</a>
+      </p>
+    </form>
+  </div>
+
+  <!-- Barra inferior -->
+  <footer class="footer-bar">
+    <a href="tel:+123456789">Llamar ahora</a>
+    <a href="mailto:soporte@clientconnect.com">Enviar correo</a>
+  </footer>
+
+ 
+</body>
+</html>
+

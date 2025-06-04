@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menú de Puntuación Interactivo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="puntuacion.css" />
+   <link rel="icon" href="/Client Connect/kenny/inicio secion/Logo_Limpieza___1_-removebg-preview.png" sizes="32x32" type="image/png">
+</head>
+<body>
+
+  <header class="header">
+        <div class="logo">
+            <a href="#">Client Connect</a>
+        </div>
+        <nav class="navbar">
+            <a href="../../inicio (1).html">Inicio</a>
+            <a href="../../nicolas/ULTIMA EE/quienes somos.html">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+  <!-- Contenedor de puntuación -->
+  <div class="rating-container">
+    <h2>Puntuación del Servicio</h2>
+    <div class="stars" id="star-rating">
+      <span class="star" data-value="1">&#9733;</span>
+      <span class="star" data-value="2">&#9733;</span>
+      <span class="star" data-value="3">&#9733;</span>
+      <span class="star" data-value="4">&#9733;</span>
+      <span class="star" data-value="5">&#9733;</span>
+    </div>
+    <p id="ratingResult">Puntuación: 0</p>
+    <label for="comentario">Comentarios:</label><br>
+    <textarea id="comentario" rows="4" placeholder="¿Por qué tu calificación?"></textarea><br><br>
+    <button>Enviar</button>
+  </div>
+
+  <!-- Barra inferior -->
+  <footer class="barra-inferior">
+    <div class="contenido-footer">
+      <p>¿Tienes alguna pregunta? <strong>Estamos aquí para ayudarte</strong></p>
+      <div class="botones-footer">
+        <a href="tel:+123456789" class="btn-footer">Llamar ahora</a>
+        <a href="mailto:soporte@clientconnect.com" class="btn-footer">Enviar correo</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const stars = document.querySelectorAll(".star");
+    const ratingResult = document.getElementById("ratingResult");
+    const comentarioInput = document.getElementById("comentario");
+    const enviarBtn = document.querySelector("button");
+    let selectedRating = 0;
+  
+    stars.forEach((star, index) => {
+      star.addEventListener("mouseover", () => {
+        resetStars();
+        for (let i = 0; i <= index; i++) {
+          stars[i].classList.add("hover");
+        }
+      });
+  
+      star.addEventListener("mouseout", () => {
+        resetStars();
+        if (selectedRating > 0) {
+          for (let i = 0; i < selectedRating; i++) {
+            stars[i].classList.add("selected");
+          }
+        }
+      });
+  
+      star.addEventListener("click", () => {
+        selectedRating = index + 1;
+        ratingResult.textContent = `Puntuación: ${selectedRating}`;
+      });
+    });
+  
+    function resetStars() {
+      stars.forEach(star => {
+        star.classList.remove("hover", "selected");
+      });
+    }
+  
+    // ✅ Funcionalidad del botón Enviar
+    enviarBtn.addEventListener("click", () => {
+      const comentario = comentarioInput.value.trim();
+  
+      if (selectedRating === 0) {
+        alert("Por favor, selecciona una puntuación antes de enviar.");
+        return;
+      }
+  
+      if (comentario === "") {
+        alert("Por favor, escribe un comentario antes de enviar.");
+        return;
+      }
+  
+      // Puedes cambiar esto para enviar datos a un servidor si quieres
+      alert(`Gracias por tu valoración de ${selectedRating} estrellas.\nComentario: ${comentario}`);
+      console.log("Puntuación:", selectedRating);
+      console.log("Comentario:", comentario);
+  
+      // Limpiar después de enviar
+      selectedRating = 0;
+      comentarioInput.value = "";
+      ratingResult.textContent = "Puntuación: 0";
+      resetStars();
+    });
+  </script>
+  
+
+</body>
+</html>

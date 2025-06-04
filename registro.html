@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Sección</title>
+    <link rel="stylesheet" href="registro.css">
+     <link rel="icon" href="./Logo_Limpieza___1_-removebg-preview.png" sizes="32x32" type="image/png">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="./samuel/PAGINA PRINCIPAL-20250515T200046Z-1-001/PAGINA PRINCIPAL/pagina principal.html">Inicio</a>
+        <a href="../inicio secion/nicolas/ULTIMA EE/quienes somos.html">Nosotros</a>
+        <a href="#">Contacto</a>
+        <a href="./inicio (1).html">Iniciar Sesión</a>
+    </nav>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <div class="container">
+        <h1>Registro</h1>
+        <form id="registroForm" method="post" action="Http://localhost:3000/guardar" >
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+            </div>
+            <div class="form-group">
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" required>
+            </div>
+            <div class="form-group">
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmarContrasena">Confirmar Contraseña:</label>
+                <input type="password" id="confirmarContrasena" name="confirmarContrasena" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="seccion">Ciudad:</label>
+                <select id="seccion" name="seccion" required>
+                    <option value="">Seleccione...</option>
+                    <option value="seccion1">Bogotá</option>
+                    <option value="seccion2">Medellín</option>
+                    <option value="seccion3">Cali</option>
+                    <option value="seccion4">Pereira</option>
+                    <option value="seccion5">Barranquilla</option>
+                    <option value="seccion6">Cartagena</option>
+                    <option value="seccion7">Cúcuta</option>
+                    <option value="seccion8">Soledad</option>
+                    <option value="seccion9">Ibagué</option>
+                    <option value="seccion10">Bucaramanga</option>
+                </select>
+            </div>
+            <div>
+                <button type="submit" class="registro-btn">Registrar</button>
+
+            </div>
+        </form>
+        <div id="mensajeExito" style="display:none;">
+            ¡Registro exitoso! 🎉
+        </div>
+    </div>
+
+    <!-- BOTONES FINALES -->
+    <div class="footer-buttons">
+        <button onclick="window.location.href='tel:+573001112233'"> Llamar Ahora</button>
+        <button onclick="window.location.href='mailto:info@tudominio.com'">Enviar Correo</button>
+    </div>
+
+    <!-- <script src="registro.js"></script> -->
+</body>
+</html>

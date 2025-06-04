@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#007f8c, black);
+    color: #333;
+}
+
+.header {
+    font-family: 'Roboto Slab', serif; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    color: #fff;
+    padding: 15px 20px;
+    transition: all 0.3s ease;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    right: 0;
+    z-index: 1000; 
+}
+
+
+.header .logo a {
+    font-family: 'Roboto Slab', serif; 
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.header .logo a:hover {
+    transform: scale(1.1); 
+}
+
+
+.navbar {
+    font-family: 'Roboto Slab', serif; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+
+.navbar a:hover {
+    color: #0a9396;
+    transform: scale(1.05); 
+}
+
+
+.navbar a::after {
+    content: none; 
+}
+
+
+.navbar a.login {
+    background-color: #0a9396;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.navbar a.login:hover {
+    background-color: #005f73;
+    transform: scale(1.1); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a.login:focus {
+    outline: none;
+}
+
+body {
+    padding-top: 80px; 
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    color: #005f5a;
+}
+h2 {
+    color: #005f5a;
+}
+p {
+    line-height: 1.6;
+}
+.footer {
+    background-color: #000; 
+    padding: 20px 0;
+    margin-top: 0px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 0px;
+}
+
+.footer-left a {
+    margin-right: 30px;
+    color: #fff; 
+    text-decoration: none;
+    font-size: 24px; 
+    transition: color 0.3s ease;
+}
+
+.footer-left a:hover {
+    color: #007bff; 
+}
+
+.footer-right p {
+    color: #fff; 
+    margin: 0;
+    font-size: 16px; 
+}
+
+

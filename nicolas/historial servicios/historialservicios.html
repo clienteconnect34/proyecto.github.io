@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Historial de Servicios del Usuario</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="historial servicios.css" />
+   <link rel="icon" href="/Client Connect/kenny/inicio secion/Logo_Limpieza___1_-removebg-preview.png" sizes="32x32" type="image/png">
+  <style>
+    .toggle-btn {
+      background-color: #007777;
+      color: rgb(250, 250, 250);
+      padding: 8px 16px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .toggle-btn:hover {
+      background-color: #00aaaa;
+    }
+
+    .service-details {
+      display: none;
+      margin-top: 15px;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+        <div class="logo">
+            <a href="#">Client Connect</a>
+        </div>
+        <nav class="navbar">
+            <a href="../../samuel/Slider Client Connect Services/slider.html">Inicio</a>
+            <a href="../ULTIMA EE/quienes somos.html">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+  
+  <div class="container">
+    <h1>Historial de Servicios</h1>
+
+    <div class="service">
+      <h2>Servicio 1</h2>
+      <p><strong>Fecha:</strong> 15 de marzo de 2025</p>
+      <button class="toggle-btn">Ver más</button>
+      <div class="service-details">
+        <p><strong>Descripción:</strong> Servicio de especialización de aseo general.</p>
+        <p><strong>Horario:</strong> 8:00 a.m. a 4:00 p.m.</p>
+        <p><strong>Lugar:</strong> Casa del cliente</p>
+        <p><strong>Calidad del usuario:</strong> 5.0 estrellas</p>
+        <p><strong>Calidad del trabajador:</strong> 5.0 estrellas</p>
+      </div>
+    </div>
+
+    <div class="service">
+      <h2>Servicio 2</h2>
+      <p><strong>Fecha:</strong> 10 de marzo de 2025</p>
+      <button class="toggle-btn">Ver más</button>
+      <div class="service-details">
+        <p><strong>Descripción:</strong> Servicio de barbería a domicilio.</p>
+        <p><strong>Horario:</strong> Horas de la tarde</p>
+        <p><strong>Puntuación del usuario:</strong> 5.0 estrellas</p>
+        <p><strong>Puntuación del trabajador:</strong> 5.0 estrellas</p>
+      </div>
+    </div>
+
+    <div class="service">
+      <h2>Servicio 3</h2>
+      <p><strong>Fecha:</strong> 1 de marzo de 2025</p>
+      <button class="toggle-btn">Ver más</button>
+      <div class="service-details">
+        <p><strong>Descripción:</strong> Asistencia en la configuración de la red doméstica.</p>
+        <p><strong>Horario:</strong> 3:00 p.m. a 4:00 p.m.</p>
+      </div>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="section-contact">
+      <h3>Contacto</h3>
+      <p>¿Tienes alguna pregunta? ¡Estamos aquí para ayudarte!</p>
+      <div class="footer-buttons">
+        <button>Llamar ahora</button>
+        <button>Enviar un correo</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-left">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+          <div class="footer-right">
+            <p>© 2025 Client Connect. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </footer>
+
+  <script>
+    const buttons = document.querySelectorAll('.toggle-btn');
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        const details = button.nextElementSibling;
+        if (details.style.display === 'block') {
+          details.style.display = 'none';
+          button.textContent = 'Ver más';
+        } else {
+          details.style.display = 'block';
+          button.textContent = 'Ver menos';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

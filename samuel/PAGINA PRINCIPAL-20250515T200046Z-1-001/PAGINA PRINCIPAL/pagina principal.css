@@ -1,0 +1,587 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color: #111;
+}
+
+p{
+    color: #111;
+}
+
+body {
+    font-family: "Robot Slab", sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+.header {
+    font-family: 'Roboto Slab', serif; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    color: #fff;
+    padding: 15px 20px;
+    transition: all 0.3s ease;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    right: 0;
+    z-index: 1000; 
+}
+
+
+.header .logo a {
+    font-family: 'Roboto Slab', serif; 
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.header .logo a:hover {
+    transform: scale(1.1); 
+}
+
+
+.navbar {
+    font-family: 'Roboto Slab', serif; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+
+.navbar a:hover {
+    color: #0a9396;
+    transform: scale(1.05); 
+}
+
+
+.navbar a::after {
+    content: none; 
+}
+
+
+.navbar a.login {
+    background-color: #0a9396;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.navbar a.login:hover {
+    background-color: #005f73;
+    transform: scale(1.1); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a.login:focus {
+    outline: none;
+}
+
+
+body {
+    padding-top: 65px; 
+}
+
+
+section {
+    margin-top: 20px;
+}
+
+
+.intro {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black ), url("Imagenes/Diseño\ sin\ título.png" );
+    background-size: cover; 
+    background-position: center; 
+    color: #fff; 
+    text-align: center; 
+    height: 90vh;
+    padding: 50px 20px; 
+    margin-top: 29px;
+    position: relative; 
+    
+}
+
+
+.intro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; 
+}
+
+
+.intro .contenido {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 40px 30px;
+    backdrop-filter: blur(8px);
+    
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    max-width: 800px;
+    margin: 0 auto;
+    color: #ffffff;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    margin-top: 100px;
+}
+
+
+.intro .contenido h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 20px;
+   
+}
+
+.intro .contenido p {
+    font-size: 18px;
+    margin-bottom: 45px;
+    margin-top: 30px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.intro .contenido .destacado {
+    font-style: italic;
+    font-size: 16px;
+    color: #94d2bd;
+    margin-bottom: 10px;
+}
+
+
+.intro .btn {
+    background-color: #007f8c;
+    padding: 12px 25px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.intro .btn:hover {
+    background-color: #94d2bd;
+    color: #000;
+}
+
+
+.beneficios {
+    font-family: "Robot Slab";
+    display: flex;
+    justify-content: space-around;
+    margin-top: 55px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.beneficios div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    color: black;
+}
+
+.beneficios i {
+    color: #005f73;
+    font-size: 20px;
+}
+
+
+.intro h1 {
+    margin-top: 115PX;
+    font-family: 'Roboto Slab', serif; 
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.intro h1 {
+    color: #005f73;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6); 
+}
+
+
+.intro p {
+    font-family: 'Roboto Slab', serif;
+    font-weight: lighter;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+.intro .btn {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    background-color: #005f73;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.intro .btn:hover {
+    background-color: #94d2bd;
+}
+
+
+.intro h1 {
+    font-family: 'Roboto Slab', serif; 
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.intro p {
+    font-family: 'Roboto Slab', serif;
+    font-weight: lighter;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.intro .btn {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    background-color: #005f73;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.intro .btn:hover {
+    background-color:#0a9396;
+}
+
+
+.client-connect {
+    background-color: #000000;
+    color: #007f8c;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 0px;
+}
+
+
+.client-connect h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+
+.client-connect p {
+    font-family: 'Roboto Slab', serif;
+    font-weight: lighter;
+    font-size: 18px;
+    color: #f4f4f4;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    max-width: 800px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-box p{
+    text-align: justify;
+}
+
+.content-box-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 40px;
+    
+}
+
+
+.content-box {
+    background-color: #0a9396;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.content-box h3 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+
+.content-box ul {
+    text-align: left;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.content-box ul li {
+    font-family: 'Roboto Slab', serif;
+    font-weight: lighter;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+
+
+
+.servicios {
+    margin-top: 0px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: lighter;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #eaeaea;
+    
+}
+
+.servicios h2 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #005f73;
+}
+
+.servicios-container {
+    display: flex; 
+    justify-content: space-between; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+
+.servicio-box {
+    background-color: #fff;
+    width: 30%; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.servicio-box:hover {
+    transform: translateY(-10px); 
+}
+
+.servicio-box i {
+    font-size: 40px;
+    color: #005f73;
+    margin-bottom: 20px;
+}
+
+.servicio-box h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.servicio-box p {
+    font-size: 16px;
+    color: #666;
+}
+
+
+.contact-btn-container .btn {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    background-color: #005f73;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 40px;
+}
+
+.contact-btn-container .btn:hover {
+    background-color: #0a9396;
+}
+
+
+.contacto {
+    margin-top: 0px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    margin-bottom: 0px;
+}
+
+.contacto h2 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #005f73;
+}
+
+.contacto p {
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-weight: lighter;
+    margin-bottom: 20px;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.contacto .btn {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    background-color: #005f73;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contacto .btn:hover {
+    background-color: #0a9396;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.info-columns {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    color: white;
+    padding: 50px 40px;
+    font-family: 'Roboto Slab', serif;
+    flex-wrap: wrap;
+    margin-top: 0px;
+}
+
+.info-columns .column {
+    flex: 1;
+    margin: 0 20px;
+    min-width: 200px;
+}
+
+.info-columns h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #005f73;
+}
+
+.info-columns p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: black;
+}
+
+.info-link {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #0a9396;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.info-link:hover {
+    color: #005f73;
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #000; 
+    padding: 20px 0;
+    margin-top: 0px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 0px;
+}
+
+.footer-left a {
+    margin-right: 30px;
+    color: #fff; 
+    text-decoration: none;
+    font-size: 24px; 
+    transition: color 0.3s ease;
+}
+
+.footer-left a:hover {
+    color: #007bff; 
+}
+
+.footer-right p {
+    color: #fff; 
+    margin: 0;
+    font-size: 16px; 
+}
+
+
+.special-font {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    color: black;
+}
+
+ul{
+    list-style-type: none
+}
+
+
+
+
+
