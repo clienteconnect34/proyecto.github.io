@@ -54,7 +54,7 @@ app.post('/guardar',async(req,res)=>{
                 <script>
                     window.onload=function(){
                         alert("usuario ya existe")
-                        window.location.href='inicio (1).html'
+                        window.location.href='index.html'
                     }
                 </script>
             `
